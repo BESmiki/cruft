@@ -2,29 +2,11 @@
 
 $(document).ready(function(){
 // tees
-    $("#tee-one").click(function(){
-      $("#tee-one").toggleClass("toggleJs");
-    });
    
-    $("#tee-two").click(function(){
-      $("#tee-two").toggleClass("toggleJs");
+    $(".card-image-one").click(function(){
+      $(this).toggleClass("toggleJs");
     });
   
-    $("#tee-three").click(function(){
-      $("#tee-three").toggleClass("toggleJs");
-    });
-  
-    $("#tee-four").click(function(){
-      $("#tee-four").toggleClass("toggleJs");
-    });
-  
-    $("#tee-five").click(function(){
-      $("#tee-five").toggleClass("toggleJs");
-    });
-  
-    $("#tee-six").click(function(){
-      $("#tee-six").toggleClass("toggleJs");
-    });
 
 // jumpers
 
