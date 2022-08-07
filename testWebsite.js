@@ -7,7 +7,6 @@ $(document).ready(function(){
       $(this).toggleClass("toggleJs");
     });
   
-
 // jumpers
 
     $("#jump-one").click(function(){
