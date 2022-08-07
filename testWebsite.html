@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+
+    <title>//CRUFT</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blaka&family=Courier+Prime&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Fira+Code&family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="testWebsite.css" />
+  </head>
+
+  <body>
+
+    <!-- landing page -->
+ 
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span style='color:#7debf5' class="text">//CRUFT:</span>
+        </h1>
+        <h1 class="hide">
+          <span style='color:#f57e2b' class="text">badly designed,</span>
+        </h1>
+         <h1 class="hide">
+          <span style='color:#f253f5'class="text">unnecessarily complicated,</span>
+        </h1>
+        <h1 class="hide">
+          <span style='color:#7ff538'class="text">or unwanted code or software.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <!-- header -->
+
+    <header class="header-container" id="headerTop">
+  
+      <input
+        class="cruftLogo"
+        id="cruft"
+        type="button"
+        value="//CRUFT(apparel);"
+      />
+
+      <div class="cruftText">
+        <span
+          >Cruft; noun; badly designed, unnecessarily complicated, or unwanted
+          code.</span
+        >
+      </div>
+    </header>
+
+    <div class="nav-bar-container">
+      <!-- need to add <a> tags -->
+      <a href="#shirt-link" class="teeshirt-nav navBarAll">[t-Shirts,</a>
+      <a href="#hoodie-link" class="hoodie-nav navBarAll">hoodies,</a>
+      <a href="#tote-link" class="toteBag-nav navBarAll">toteBags,</a>
+      <a href="#mug-link" class="mug-nav navBarAll">Mugs];</a>
+    </div>
+
+    <!-- teeshirt cards -->
+    <div class="mother-container">
+      <div class="item-container-one" id="shirt-link">
+        <div class="item-card">
+          <div class="card-image-one" id="tee-one"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-one" id="tee-two"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-one" id="tee-three"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-one" id="tee-four"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-one" id="tee-five"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-one" id="tee-six"></div>
+        </div>
+      </div>
+
+      <!-- hoodies -->
+
+      <div class="item-container-two" id="hoodie-link">
+        <div class="item-card">
+          <div class="card-image-two" id="jump-one"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-two" id="jump-two"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-two" id="jump-three"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-two" id="jump-four"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-two" id="jump-five"></div>
+        </div>
+      </div>
+
+      <!-- totebags -->
+
+      <div class="item-container-three" id="tote-link">
+        <div class="item-card">
+          <div class="card-image-three" id="tote-one"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-three" id="tote-two"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-three" id="tote-three"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-three" id="tote-four"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-three" id="tote-five"></div>
+        </div>
+      </div>
+
+      <!-- mugs -->
+
+      <div class="item-container-four" id="mug-link">
+        <div class="item-card">
+          <div class="card-image-four" id="mug-one"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-four" id="mug-three"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-four" id="mug-four"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-four" id="mug-five"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-four" id="mug-six"></div>
+        </div>
+
+        <div class="item-card">
+          <div class="card-image-four" id="mug-seven"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about modal -->
+    <dialog id="aboutModal">
+      <form method="dialog">
+        <div class="model-content">
+          <!-- insert about text here -->
+          <button id="closeButton" value="default">end()</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- footer  -->
+
+    <div class="footer-container" id="foot">
+      <button id="aboutOpen">{about}</button>
+
+        <form id='form' action='#'>
+          <div class='inputBox'>
+            <input type='text' name='' id='email' placeholder='enter email' onkeydown='validation()'> 
+            <span id='emailText'></span>
+          </div>
+        </form>
+<!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- cloudflare -->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"></script>
+  <!-- inhouse js -->
+<script src="testWebsite.js"></script>
+    
+  </body>
+</html>

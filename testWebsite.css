@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+  }
+
+  /* landing page */
+
+  .intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    background-image: url('items.jpg/LPsmile.png');
+    z-index: 1000;
+   
+  }
+  
+  .text{
+    color: white;
+    font-size: 3rem;
+    z-index: 1000;
+  }
+  
+  .hide {
+    background: black;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .hide span {
+    transform: translatey(100%);
+    display: inline-block;
+    z-index: 1000;
+  }
+  
+/* header/logo */
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* maybe change to px? */
+    height: 20vh;
+    background-color: #bababa;
+    color: black;
+    transition: 500ms ease-in-out;
+} 
+
+ .cruftLogo{
+font-size: 50px;
+padding-bottom: 10px;
+border: none;
+background: none;
+/* glitch from here */
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: cruftLogo 500ms infinite;
+  }
+
+  @keyframes cruftLogo {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+        0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+
+  .cruftLogo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cruftLogo span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* green */
+    opacity: 0.8;
+  }
+  
+  .cruftLogo span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* red */
+    opacity: 0.8;
+  }
+
+.cruftText{
+font-size: 20px;
+transition: 1500ms;
+font-weight: 700;
+transition: 1000ms ease-out;
+
+}
+.cruftText:hover{
+    font-size: 24px;
+} 
+.cruftText:hover span{
+    display: none;
+  }
+  .cruftText:hover:after{
+    content: "document.write(('b' + 'a' + + 'a' + 'a').toLowerCase());";
+  }
+
+@media (max-width: 800px) {
+    .cruftLogo{
+        font-size: 35px;
+        color: #f3eaf3;
+    }
+}
+@media (max-width: 800px) {
+    .header-container{
+        background-color: black;
+    }
+}
+
+/* clothes nav */
+.nav-bar-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%,1fr));
+    font-size: 30px;
+    transition: 500ms;
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navBarAll{
+    padding-left: 40%;
+    padding-top: 2%;
+    padding-right: 0;
+    padding-bottom: 2%;
+    transition: 500ms;
+}
+
+.teeshirt-nav{
+    background-color: #7debf5;
+    
+}
+.hoodie-nav{
+    background-color: #f57e2b;
+}
+.toteBag-nav{
+    background-color: #f253f5;
+}
+.mug-nav{
+    background-color: #7ff538;
+}
+.teeshirt-nav:hover, .hoodie-nav:hover, 
+.toteBag-nav:hover, .mug-nav:hover{
+    background-color: rgb(14, 10, 10);
+    color: azure;
+    cursor: pointer;
+}
+/* teeshirt cards */
+
+.item-container-one, .item-container-two,
+ .item-container-three, .item-container-four{
+    background-color: white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+
+  .item-container-one{
+    background-image: url('items.jpg/BKmountainLight.png');
+    background-size: cover;
+    
+  }
+  .item-container-two{
+    background-image: url('items.jpg/Bkcloth.png');
+    background-size: cover;
+    
+  }
+  .item-container-three{
+    background-image: url('items.jpg/BKcliff.png');
+    background-size: cover;
+  }
+  .item-container-four{
+    background-image: url('items.jpg/BKmarble.png');
+    background-size: cover;
+  }
+
+ 
+  .card-image-one, .card-image-two, .card-image-three, .card-image-four{
+        background-position: center;
+        background-size: cover;
+        } 
+    
+    .item-card{
+    width: 100px;
+    height: 250px;
+    transition: 1000ms;
+    }        
+
+    .item-card:hover, .card-image-one, .card-image-two, .card-image-three, .card-image-four{
+    height: 350px;
+    width: 350px;
+    text-align: right;
+    color:#d10844;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Indie Flower', cursive;
+    } 
+/* teeshirt images */
+    #tee-one{
+    background-image: url('items.jpg/loopTblack.png');
+    
+    }
+
+    #tee-two{
+    background-image: url('items.jpg/loopTlightblue.png');
+
+    }
+
+    #tee-three{
+    background-image: url('items.jpg/loopTwhite.png');
+
+    }
+
+    #tee-four{
+    background-image: url('items.jpg/kawiiTgray.png');
+   
+    }
+
+    #tee-five{
+    background-image: url('items.jpg/kawiiTpink.png');
+    }
+
+    #tee-six{
+        background-image: url('items.jpg/kawiiTwhite.png');
+        
+    }
+    /* jumper images */
+
+    #jump-one{
+        background-image: url('items.jpg/jumper2Black.png');
+        
+    }
+    
+    #jump-two{
+    background-image: url('items.jpg/jumper2Gray.png');
+
+       }
+
+    #jump-three{
+    background-image: url('items.jpg/jumperBlack.png');
+
+    }
+
+    #jump-four{
+    background-image: url('items.jpg/jumperWhite.png');
+    
+    }
+
+    #jump-five{
+    background-image: url('items.jpg/jumperGreen.png');
+    }
+
+    /* tote images */
+
+    #tote-one{
+    background-image: url('items.jpg/totePink.png');
+        
+    }
+
+    #tote-two{
+    background-image: url('items.jpg/toteWhite.png');
+
+    }
+
+    #tote-three{
+    background-image: url('items.jpg/toteBananaBlack.png');
+
+    }
+
+    #tote-four{
+    background-image: url('items.jpg/toteBananaGreen.png');
+
+    }
+
+    #tote-five{
+    background-image: url('items.jpg/toteBananaWhite.png');
+    }
+
+/* mug images */
+
+    #mug-one{
+        background-image: url('items.jpg/mugReact.png');
+        
+        }
+    
+        /* #mug-two{
+        background-image: url('items.jpg/mugPython.png');
+    
+        } */
+    
+        #mug-three{
+        background-image: url('items.jpg/mugJSS.png');
+    
+        }
+    
+        #mug-four{
+        background-image: url('items.jpg/mugJS.png');
+       
+        }
+    
+        #mug-five{
+        background-image: url('items.jpg/mugC.png');
+        }
+    
+        #mug-six{
+            background-image: url('items.jpg/mugBun.png');
+            
+        }
+
+        #mug-seven{
+            background-image: url('items.jpg/mugBanana.png');
+            
+        }
+    
+        /* footer */
+
+.footer-container{
+    background-color: rgb(179, 179, 179);
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative;
+    width: 100%;
+    bottom: 0; */
+}
+
+/* about modal */
+#aboutModal{
+    transform: translate(-50%, -50%);
+    position: fixed;
+    align-items: center;
+    top:50%;
+    left:50%;
+    width: 40vw;
+    height: 40vh;
+    z-index: 100;
+    padding-bottom: 20px;
+    text-align:end;
+    background-image: url('items.jpg/kawiiModal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #7ff538;
+}
+
+
+
+#closeButton{
+background-color: #f253f5;
+color: black;
+padding: 20px;
+font-size: 20px;
+position:fixed;
+right: 0;
+bottom: 0;
+}
+
+#aboutOpen{
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+}
+
+/* email validator */
+
+
+/* JS switch */
+
+  .toggleJs{
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top:50%;
+    left:50%;
+    height: 700px;
+    width: 700px;
+    z-index: 10;
+    
+  }  
+
+
+/* all items */
+            
+
+  @media (max-width: 800px){
+    .mother-container{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 100%;
+        } 
+      }
+
+
+
+/* carousel */
+  @media (max-width: 800px){
+      .item-card{
+            width: 250px;
+            /* max-width: 100%; */
+            height:max-content; 
+            margin: 75px 75px;
+            background-size: cover;
+          }
+      } 
+
+@media (max-width: 800px){
+    .cruftText, .footer-container{
+        display:none;
+    } 
+    }
+
+@media (max-width: 800px){
+    .nav-bar-container,.nav-box{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    } 
+    }
+
+@media (max-width: 800px){
+    .header-container{
+        height: 10vh;
+    } 
+    }
+
+    @media (max-width: 800px){
+        .toggleJs{
+            height: 400px;
+            width: 400px;
+        } 
+        }
+
+        
+                
