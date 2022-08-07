@@ -9,67 +9,22 @@ $(document).ready(function(){
   
 // jumpers
 
-    $("#jump-one").click(function(){
-      $("#jump-one").toggleClass("toggleJs");
+    $(".card-image-two").click(function(){
+      $(this).toggleClass("toggleJs");
     });
    
-    $("#jump-two").click(function(){
-      $("#jump-two").toggleClass("toggleJs");
-    });
-  
-    $("#jump-three").click(function(){
-      $("#jump-three").toggleClass("toggleJs");
-    });
-  
-    $("#jump-four").click(function(){
-      $("#jump-four").toggleClass("toggleJs");
-    });
-  
-    $("#jump-five").click(function(){
-      $("#jump-five").toggleClass("toggleJs");
-    });
 
   // totes
 
-    $("#tote-one").click(function(){
-      $("#tote-one").toggleClass("toggleJs");
+    $(".card-image-three").click(function(){
+      $(this).toggleClass("toggleJs");
     });
-    $("#tote-two").click(function(){
-      $("#tote-two").toggleClass("toggleJs");
-    });
-    $("#tote-three").click(function(){
-      $("#tote-three").toggleClass("toggleJs");
-    });
-    $("#tote-four").click(function(){
-      $("#tote-four").toggleClass("toggleJs");
-    });
-    $("#tote-five").click(function(){
-      $("#tote-five").toggleClass("toggleJs");
-    });
-
-    $("#tote-five").click(function(){
-      $("#tote-five").toggleClass("toggleJs");
-    });
+   
 
 // mugs
 
-    $("#mug-one").click(function(){
-      $("#mug-one").toggleClass("toggleJs");
-    });
-    $("#mug-three").click(function(){
-      $("#mug-three").toggleClass("toggleJs");
-    });
-    $("#mug-four").click(function(){
-      $("#mug-four").toggleClass("toggleJs");
-    });
-    $("#mug-five").click(function(){
-      $("#mug-five").toggleClass("toggleJs");
-    });
-    $("#mug-six").click(function(){
-      $("#mug-six").toggleClass("toggleJs");
-    });
-    $("#mug-seven").click(function(){
-      $("#mug-seven").toggleClass("toggleJs");
+    $(".card-image-four").click(function(){
+      $(this).toggleClass("toggleJs");
     });
   });
   
