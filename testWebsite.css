@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    background-image: url('items.jpg/LPsmile.png');
+    background-image: url('assets/LPsmile.png');
     z-index: 1000;
    
   }
@@ -221,21 +221,21 @@ a{
   }
 
   .item-container-one{
-    background-image: url('items.jpg/BKmountainLight.png');
+    background-image: url('assets/BKmountainLight.png');
     background-size: cover;
     
   }
   .item-container-two{
-    background-image: url('items.jpg/Bkcloth.png');
+    background-image: url('assets/Bkcloth.png');
     background-size: cover;
     
   }
   .item-container-three{
-    background-image: url('items.jpg/BKcliff.png');
+    background-image: url('assets/BKcliff.png');
     background-size: cover;
   }
   .item-container-four{
-    background-image: url('items.jpg/BKmarble.png');
+    background-image: url('assets/BKmarble.png');
     background-size: cover;
   }
 
@@ -262,118 +262,118 @@ a{
     } 
 /* teeshirt images */
     #tee-one{
-    background-image: url('items.jpg/loopTblack.png');
+    background-image: url('assets/loopTblack.png');
     
     }
 
     #tee-two{
-    background-image: url('items.jpg/loopTlightblue.png');
+    background-image: url('assets/loopTlightblue.png');
 
     }
 
     #tee-three{
-    background-image: url('items.jpg/loopTwhite.png');
+    background-image: url('assets/loopTwhite.png');
 
     }
 
     #tee-four{
-    background-image: url('items.jpg/kawiiTgray.png');
+    background-image: url('assets/kawiiTgray.png');
    
     }
 
     #tee-five{
-    background-image: url('items.jpg/kawiiTpink.png');
+    background-image: url('assets/kawiiTpink.png');
     }
 
     #tee-six{
-        background-image: url('items.jpg/kawiiTwhite.png');
+        background-image: url('assets/kawiiTwhite.png');
         
     }
     /* jumper images */
 
     #jump-one{
-        background-image: url('items.jpg/jumper2Black.png');
+        background-image: url('assets/jumper2Black.png');
         
     }
     
     #jump-two{
-    background-image: url('items.jpg/jumper2Gray.png');
+    background-image: url('assets/jumper2Gray.png');
 
        }
 
     #jump-three{
-    background-image: url('items.jpg/jumperBlack.png');
+    background-image: url('assets/jumperBlack.png');
 
     }
 
     #jump-four{
-    background-image: url('items.jpg/jumperWhite.png');
+    background-image: url('assets/jumperWhite.png');
     
     }
 
     #jump-five{
-    background-image: url('items.jpg/jumperGreen.png');
+    background-image: url('assets/jumperGreen.png');
     }
 
     /* tote images */
 
     #tote-one{
-    background-image: url('items.jpg/totePink.png');
+    background-image: url('assets/totePink.png');
         
     }
 
     #tote-two{
-    background-image: url('items.jpg/toteWhite.png');
+    background-image: url('assets/toteWhite.png');
 
     }
 
     #tote-three{
-    background-image: url('items.jpg/toteBananaBlack.png');
+    background-image: url('assets/toteBananaBlack.png');
 
     }
 
     #tote-four{
-    background-image: url('items.jpg/toteBananaGreen.png');
+    background-image: url('assets/toteBananaGreen.png');
 
     }
 
     #tote-five{
-    background-image: url('items.jpg/toteBananaWhite.png');
+    background-image: url('assets/toteBananaWhite.png');
     }
 
 /* mug images */
 
     #mug-one{
-        background-image: url('items.jpg/mugReact.png');
+        background-image: url('assets/mugReact.png');
         
         }
     
         /* #mug-two{
-        background-image: url('items.jpg/mugPython.png');
+        background-image: url('assets/mugPython.png');
     
         } */
     
         #mug-three{
-        background-image: url('items.jpg/mugJSS.png');
+        background-image: url('assets/mugJSS.png');
     
         }
     
         #mug-four{
-        background-image: url('items.jpg/mugJS.png');
+        background-image: url('assets/mugJS.png');
        
         }
     
         #mug-five{
-        background-image: url('items.jpg/mugC.png');
+        background-image: url('assets/mugC.png');
         }
     
         #mug-six{
-            background-image: url('items.jpg/mugBun.png');
+            background-image: url('assets/mugBun.png');
             
         }
 
         #mug-seven{
-            background-image: url('items.jpg/mugBanana.png');
+            background-image: url('assets/mugBanana.png');
             
         }
     
@@ -402,7 +402,7 @@ a{
     z-index: 100;
     padding-bottom: 20px;
     text-align:end;
-    background-image: url('items.jpg/kawiiModal.png');
+    background-image: url('assets/kawiiModal.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #7ff538;
