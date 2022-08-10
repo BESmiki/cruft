@@ -1,3 +1,4 @@
-# cruft
+# cruft webpage.
+## made for GA Front-End Bootcamp
 
-my name is Brett and here is my site!
+
