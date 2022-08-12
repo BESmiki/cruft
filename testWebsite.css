@@ -36,6 +36,10 @@
     font-size: 3rem;
     z-index: 1000;
   }
+
+  .text:hover{
+    filter: invert(1);
+  }
   
   .hide {
     background: black;
@@ -62,6 +66,10 @@
     color: black;
     transition: 500ms ease-in-out;
 } 
+
+.header-container:hover{
+filter: invert(1);
+}
 
  .cruftLogo{
 font-size: 80px;
@@ -422,8 +430,13 @@ bottom: 0;
 
 #aboutOpen{
     background-color: yellow;
+    border: none;
     color: black;
     font-size: 20px;
+}
+
+#aboutOpen:hover{
+  filter: invert(1);
 }
 
 /* email validator */
@@ -431,20 +444,17 @@ bottom: 0;
 
 /* JS switch */
 
-  .toggleJs{
-    transform: translate(-50%, -50%);
-    position: fixed;
-    top:50%;
-    left:50%;
-    height: 700px;
-    width: 700px;
-    z-index: 10;
-    
-  }  
+.toggleJs{
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top:50%;
+  left:50%;
+  height: 700px;
+  width: 700px;
+  z-index: 10;
+} 
 
-
-/* all items */
-            
+   /*mobile  */
 
   @media (max-width: 800px){
     .mother-container{
