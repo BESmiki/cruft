@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
+    cursor: url('assets/Mousebanana50px.png'), auto;
   }
 
   /* landing page */
@@ -433,10 +434,12 @@ bottom: 0;
     border: none;
     color: black;
     font-size: 20px;
+    
 }
 
 #aboutOpen:hover{
   filter: invert(1);
+  
 }
 
 /* email validator */
